@@ -14,7 +14,11 @@ O modelo é importado apenas após prévia e confirmação do usuário. O teste 
 
 Verificações finais: `pnpm typecheck` passou; `pnpm test` passou (20 testes em 2 arquivos); `pnpm build` passou (bundle JS 482,64 kB). O Rollup exibiu apenas avisos de comentários de pureza da dependência Zod.
 
-As verificações de tipo, testes e build da v1.1 constam na seção final abaixo. O workflow do GitHub Pages não foi executado e o site não foi publicado.
+Na validação inicial da v1.1, o workflow do GitHub Pages ainda não tinha sido executado. A publicação posterior é registrada abaixo.
+
+## Publicação no GitHub Pages — 14/10/2026
+
+O primeiro envio ao repositório foi publicado diretamente da raiz de `main`, deixando a página em branco: o HTML apontava para `/src/main.tsx`. A fonte do Pages foi alterada para GitHub Actions, e o workflow passou a rodar também em `push` para `main`, gerando e publicando `dist` com a base `/Carreira/`.
 
 ## MVP original — 13/10/2026
 
